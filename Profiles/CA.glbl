@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>CA</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://www.samsung.com/ca/refrigerators/french-door/rf8000bc-4-door-french-door-beverage-center-23-cu-ft-silver-rf23bb8600qlaa/'</initValue>
+      <name>PD_CE_Url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'RF23BB8600QLAA'</initValue>
+      <name>PD_CE_SKU</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'36&quot; BESPOKE Counter-Depth 4 Door French Door Refrigerator with Beverage Center'</initValue>
+      <name>PD_CE_DeviceName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>PD_CE_Color</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>PD_CE_Storage</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>2. Verify SKU, info all listiterm vissible and get text</description>
+   <name>02</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>69a454aa-38b6-40b8-9128-aecad0871ea9</testCaseGuid>
+</TestCaseEntity>
