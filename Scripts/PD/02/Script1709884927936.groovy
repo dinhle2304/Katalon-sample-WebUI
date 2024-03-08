@@ -28,7 +28,7 @@ try {
 	
 	CustomKeywords.'Cookie.AcceptCookie'()
 	
-// get text merchandising flag	
+/*/ get text merchandising flag	
 	WebUI.waitForElementPresent(findTestObject("Object Repository/PD/mechandisingFlag_area"), 5, FailureHandling.OPTIONAL)
 	
 	String mechandisingFlag = WebUI.getText(findTestObject("Object Repository/PD/mechandisingFlag_area"))
@@ -62,14 +62,20 @@ try {
 	String ratingReviewCount = WebUI.getText(findTestObject("Object Repository/PD/ratingReviewCount_area"))
 
 	println("ratingReviewCount la " + ratingReviewCount)
+*/
 	
-/*	get bulletFeature
+//	get bulletFeature
+
+	int count = WebUI.countElements(findTestObject('Object Repository/PD/bulletFeatureNormal_area'))
+	
+/*	for () {
 	WebUI.waitForElementPresent(findTestObject("Object Repository/PD/bulletFeatureNormal_area"), 5, FailureHandling.OPTIONAL)
 	
 	String bulletFeature = WebUI.getText(findTestObject("Object Repository/PD/bulletFeatureNormal_area"))
 
 	println("bullet feature la " + bulletFeature)
-*/
+	}
+	*/
 }
 catch (Exception e) {
 	println("exception occurs " + e.getMessage())
