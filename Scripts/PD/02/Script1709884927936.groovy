@@ -28,19 +28,48 @@ try {
 	
 	CustomKeywords.'Cookie.AcceptCookie'()
 	
-	WebUI.waitForElementPresent(findTestObject("Object Repository/PD/headerNavigation_txt"), 5, FailureHandling.OPTIONAL)
+// get text merchandising flag	
+	WebUI.waitForElementPresent(findTestObject("Object Repository/PD/mechandisingFlag_area"), 5, FailureHandling.OPTIONAL)
 	
-	String headerNavigation = WebUI.getText(findTestObject("Object Repository/PD/headerNavigation_txt"))
-	
-	String expectedText = GlobalVariable.PD_CE_DeviceName
+	String mechandisingFlag = WebUI.getText(findTestObject("Object Repository/PD/mechandisingFlag_area"))
 
-	if (headerNavigation.equals(expectedText)) {
-		println("Pass")
-		println("headerNavigation = " + headerNavigation)
-		println("expected Text = " + expectedText)
-	}else {
-		println("Fail")
-	}
+	println("mechandisingFlag la " + mechandisingFlag)
+
+//	get text deviceName	
+	WebUI.waitForElementPresent(findTestObject("Object Repository/PD/deviceName_area"), 5, FailureHandling.OPTIONAL)
+	
+	String deviceName = WebUI.getText(findTestObject("Object Repository/PD/deviceName_area"))
+
+	println("deviceName la " + deviceName)
+	
+//	get text deviceSKU
+	WebUI.waitForElementPresent(findTestObject("Object Repository/PD/deviceSKU_area"), 5, FailureHandling.OPTIONAL)
+	
+	String deviceSKU = WebUI.getText(findTestObject("Object Repository/PD/deviceSKU_area"))
+
+	println("deviceSKU la " + deviceSKU)
+	
+//	get text ratingPoint
+	WebUI.waitForElementPresent(findTestObject("Object Repository/PD/ratingPoint_area"), 5, FailureHandling.OPTIONAL)
+	
+	String ratingPoint = WebUI.getText(findTestObject("Object Repository/PD/ratingPoint_area"))
+
+	println("ratingPoint la " + ratingPoint)
+	
+//	get ratingReviewCount
+	WebUI.waitForElementPresent(findTestObject("Object Repository/PD/ratingReviewCount_area"), 5, FailureHandling.OPTIONAL)
+	
+	String ratingReviewCount = WebUI.getText(findTestObject("Object Repository/PD/ratingReviewCount_area"))
+
+	println("ratingReviewCount la " + ratingReviewCount)
+	
+/*	get bulletFeature
+	WebUI.waitForElementPresent(findTestObject("Object Repository/PD/bulletFeatureNormal_area"), 5, FailureHandling.OPTIONAL)
+	
+	String bulletFeature = WebUI.getText(findTestObject("Object Repository/PD/bulletFeatureNormal_area"))
+
+	println("bullet feature la " + bulletFeature)
+*/
 }
 catch (Exception e) {
 	println("exception occurs " + e.getMessage())
