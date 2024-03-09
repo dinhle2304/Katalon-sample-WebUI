@@ -12,10 +12,13 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.WebElement as Keys
 
 /*
 2. Verify SKU, info all listiterm vissible and get text 
@@ -28,7 +31,7 @@ try {
 	
 	CustomKeywords.'Cookie.AcceptCookie'()
 	
-/*/ get text merchandising flag	
+// get text merchandising flag	
 	WebUI.waitForElementPresent(findTestObject("Object Repository/PD/mechandisingFlag_area"), 5, FailureHandling.OPTIONAL)
 	
 	String mechandisingFlag = WebUI.getText(findTestObject("Object Repository/PD/mechandisingFlag_area"))
@@ -62,20 +65,21 @@ try {
 	String ratingReviewCount = WebUI.getText(findTestObject("Object Repository/PD/ratingReviewCount_area"))
 
 	println("ratingReviewCount la " + ratingReviewCount)
-*/
 	
-//	get bulletFeature
-
-	int count = WebUI.countElements(findTestObject('Object Repository/PD/bulletFeatureNormal_area'))
-	
-/*	for () {
+//	get bulletFeature	
 	WebUI.waitForElementPresent(findTestObject("Object Repository/PD/bulletFeatureNormal_area"), 5, FailureHandling.OPTIONAL)
 	
-	String bulletFeature = WebUI.getText(findTestObject("Object Repository/PD/bulletFeatureNormal_area"))
-
-	println("bullet feature la " + bulletFeature)
+	searchedElementList = WebUI.findWebElements(findTestObject("Object Repository/PD/bulletFeatureNormal_area"), 5, FailureHandling.STOP_ON_FAILURE)
+	
+	println("Ket qua tim kiem Web Element bullet feature la " + searchedElementList)
+	
+	int index = 1
+	
+	for (WebElement element : searchedElementList) {
+    String text = element.getText()
+    println("Văn bản từ phần tử thu " + index + "la " + text)
+	index++
 	}
-	*/
 }
 catch (Exception e) {
 	println("exception occurs " + e.getMessage())

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>bulletFeatureNormal_area</name>
+   <name>acceptAllPopup_btn</name>
    <tag></tag>
-   <elementGuidId>9dada7bf-37fe-49b5-8fe6-5e309ddf35c4</elementGuidId>
+   <elementGuidId>279e0b2d-2f27-4be9-87f9-e59a0eb0c391</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class = 'usp-text']</value>
+         <value>//button[@id='truste-consent-button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
