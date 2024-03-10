@@ -29,4 +29,14 @@
       <initValue>''</initValue>
       <name>PD_CE_Storage</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>2999.99</initValue>
+      <name>PD_CE_newPriceCurrency</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['P-RE-4NXXR18', 'P-RE-3NXXR18', 'P-RE-2NXXR18', 'P-RE-1NXXR18']</initValue>
+      <name>PD_CE_warranty_SKU_List</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

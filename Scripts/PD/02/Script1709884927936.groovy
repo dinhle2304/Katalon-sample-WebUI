@@ -75,8 +75,8 @@ try {
 	
 	int index = 1
 	
-	for (WebElement element : searchedElementList) {
-    String text = element.getText()
+	for (WebElement PDBulletFeatureElement : searchedElementList) {
+    String text = PDBulletFeatureElement.getText()
     println("Văn bản từ phần tử thu " + index + "la " + text)
 	index++
 	}
